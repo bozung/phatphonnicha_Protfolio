@@ -13,11 +13,14 @@ import {
   MobileNavLogo,
   MobileLink,
 } from "./NavbarStyledComponent";
-import { DiCssdeck } from "react-icons/di";
+import { BiGame } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
+import { BiChevronLeft } from "react-icons/bi";
+
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
+import { CgFormatSlash } from "react-icons/cg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -35,7 +38,10 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <BiGame color="red" /> <BiGame color="green" />
+            <BiGame color="blue" /> <BiChevronLeft color="yellow" />
+            <Span> Protfolio</Span>
+            <CgFormatSlash color="purple" />
           </a>
         </NavLogo>
         <MobileIcon>
@@ -46,7 +52,7 @@ const Navbar = () => {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#about">About Bonus</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#education">Education</NavLink>
